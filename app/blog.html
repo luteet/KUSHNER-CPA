@@ -1,0 +1,77 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<section class="blog container">
+			<div class="blog__breadcrumbs breadcrumbs">
+				<a class="breadcrumbs__link" href="index.html">Главная</a>
+				<span class="breadcrumbs__separator">
+					<svg width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="img/sprites.svg#next-arrow"></use>
+					</svg>
+				</span>
+				<span class="breadcrumbs__current">Блог</span>
+			</div>
+			<div class="blog__categories">
+				<ul>
+					<li>
+						<a href="#" class="current">
+							Все статьи
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Тема 1
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Тема 2
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Тема 3
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Тема 4
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="blog service container">
+			<h2 class="visually-hidden">
+				Блог
+			</h2>
+			<div class="service__main blog__main">
+				<ul class="blog__list">
+					@@loop("html/_blog-card.html", [
+						{
+							"image": '1',
+						},
+						{
+							"image": '2',
+						},
+						{
+							"image": '3',
+						},
+						{
+							"image": '4',
+						},
+						{
+							"image": '5',
+						},
+						{
+							"image": '6',
+						},
+					])
+				</ul>
+			</div>
+			@@include("html/_service-aside.html")
+		</div>
+		@@include("html/_service-aside-mob.html")
+	</main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,153 @@
+.company {
+
+	// .company__body
+
+	&__body {
+		padding-top: 60px; padding-bottom: 60px;
+
+		@include _768 {
+			padding-top: 90px; padding-bottom: 90px;
+		}
+
+		@include _992 {
+			padding-top: 120px; padding-bottom: 120px;
+		}
+		background: var(--primary);
+	}
+
+	// .company__header
+
+	&__header {
+		color: var(--white);
+
+		@include _768 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+
+		> * {
+			align-self: center;
+		}
+	}
+
+	// .company__title
+
+	&__title {
+	}
+
+	// .company__content
+
+	&__content {
+		margin-top: 32px;
+		@include _768 {
+			margin-top: 0;
+		}
+		h3 {
+			font-weight: 500;
+			line-height: 140%;
+			text-transform: uppercase;
+			font-size: 1.125rem;
+			
+			@include _992 {
+				font-size: 1.25rem;
+			}
+
+		}
+
+		ul {
+			padding-left: 25px;
+		}
+
+		ul, li {
+			list-style-type: disc;
+		}
+
+		li {
+			padding-top: 16px;
+		}
+	}
+
+	// .company__row
+
+	&__row {
+		margin-top: 32px;
+
+		@include _768 {
+			margin-top: 64px;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	// .company__image
+
+	&__image {
+
+		min-height: 260px;
+		display: flex;
+
+		// .company__image--wrapper
+
+		&--wrapper {
+			min-height: 100%;
+
+			img {
+				border-radius: 16px;
+			}
+		}
+	}
+
+	// .company__form
+
+	&__form {
+
+		background: var(--white);
+		border-radius: 16px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 16px;
+		@include _768 {
+			padding: 32px;
+		}
+
+		// .company__form--wrapper
+
+		&--wrapper {
+			max-width: 442px; width: 100%;
+			text-align: center;
+
+			h3 {
+				font-size: 1.125rem;
+				font-weight: 600;
+				line-height: 140%;
+				text-transform: uppercase;
+				color: var(--black);
+
+				margin-bottom: 16px;
+				
+				@include _992 {
+					font-size: 1.25rem;
+				}
+			}
+
+			label {
+				display: block;
+				margin-top: 16px;
+			}
+
+			button {
+				margin-top: 16px;
+				width: 100%;
+			}
+
+			input {
+				border: 1px solid var(--gray);
+			}
+		}
+	}
+}

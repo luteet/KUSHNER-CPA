@@ -1,0 +1,59 @@
+.accountant {
+
+	// .accountant__title
+
+	&__title {
+	}
+
+	// .accountant__row
+
+	&__row {
+		margin-top: 32px;
+
+		@include _768 {
+			margin-top: 64px;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	// .accountant__content
+
+	&__content {
+		background: var(--light-gray);
+		padding: 16px;
+		@include _768 {
+			padding: 24px 40px;
+		}
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		border-radius: 16px;
+
+		p:not(:first-child) {
+			padding-top: 16px;
+		}
+		
+	}
+
+	// .accountant__image
+
+	&__image {
+
+		min-height: 307px;
+		display: flex;
+
+		// .accountant__image--wrapper
+
+		&--wrapper {
+			min-height: 100%;
+
+			img {
+				border-radius: 16px;
+			}
+		}
+	}
+}

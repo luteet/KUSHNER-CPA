@@ -1,0 +1,41 @@
+@@include("html/_header.html")
+
+	<main class="main _padding-botton-none">
+		<section class="error-404 container">
+			<div class="error-404__background" aria-hidden="true">
+				<div class="error-404__decor">
+					<picture>
+						<source srcset="img/404/404-image-start.avif" type="image/avif">
+						<source srcset="img/404/404-image-start.webp" type="image/webp">
+						<img src="img/404/404-image-start.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="error-404__decor">
+					<picture>
+						<source srcset="img/404/404-image-end.avif" type="image/avif">
+						<source srcset="img/404/404-image-end.webp" type="image/webp">
+						<img src="img/404/404-image-end.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="error-404__main">
+				<div class="error-404__code">
+					404
+				</div>
+				<h1 class="error-404__title">
+					ОЙ! <br>
+					кажется, что-то пошло не так
+				</h1>
+				<div class="error-404__text">
+					<p>
+						Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена или был введен неверный адрес в адресной строке.
+					</p>
+				</div>
+				<a href="/" class="error-404__link btn">
+					Перейти на главную
+				</a>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,31 @@
+@import 'mixin';
+@import 'vars';
+@import 'libs';
+@import 'null';
+@import 'global';
+@import 'font';
+@import 'form';
+//@import 'popup';
+
+@import 'components/header';
+
+@import 'pages/index/hero';
+@import 'pages/index/about-us';
+@import 'pages/index/accountant';
+@import 'pages/index/company';
+@import 'pages/index/individual-approach';
+@import 'pages/index/reviews';
+
+@import 'pages/service/service-hero';
+@import 'pages/service/about-services';
+@import 'pages/service/services';
+@import 'pages/service/consultation';
+@import 'pages/service/service';
+
+@import 'pages/blog/main';
+
+@import 'pages/contacts/main';
+
+@import 'pages/404/main';
+
+@import 'components/footer';

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header container">
+			<a href="index.html" class="header__logo">
+				<picture>
+					<source srcset="img/logo.avif" type="image/avif">
+					<source srcset="img/logo.webp" type="image/webp">
+					<img src="img/logo.png" alt="Logo" width="134" height="56" loading="lazy" class="header__logo--img">
+				</picture>
+			</a>
+			<nav class="header__nav">
+				<div class="header__nav--body">
+					<ul class="header__nav--list">
+						<li>
+							<a href="/">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="accounting-services.html">
+								Бухгалтерские услуги
+							</a>
+							<ul>
+								<li>
+									<a href="auditor-services.html">
+										Услуги Аудитора (Роэ Хешбон)
+									</a>
+								</li>
+								<li>
+									<a href="bookkeeping.html">
+										Ведение бухгалтерских книг
+									</a>
+								</li>
+								<li>
+									<a href="tax-reporting.html">
+										Отчетность и представительство перед налоговыми инстанциями
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Декларация об активах и обязательствах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Составление отчетов в налоговую
+									</a>
+								</li>
+								<li>
+									<a href="tax-registration.html">
+										Регистрация в налоговых службах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Годовые отчеты
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Дополнительные услуги
+							</a>
+							<ul>
+								<li>
+									<a href="#">
+										Услуги Аудитора (Роэ Хешбон)
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Ведение бухгалтерских книг
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Отчетность и представительство перед налоговыми инстанциями
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Декларация об активах и обязательствах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Составление отчетов в налоговую
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Регистрация в налоговых службах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Годовые отчеты
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Трудовое право
+							</a>
+							<ul>
+								<li>
+									<a href="#">
+										Услуги Аудитора (Роэ Хешбон)
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Ведение бухгалтерских книг
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Отчетность и представительство перед налоговыми инстанциями
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Декларация об активах и обязательствах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Составление отчетов в налоговую
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Регистрация в налоговых службах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Годовые отчеты
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="blog.html">
+								Блог
+							</a>
+						</li>
+						<li>
+							<a href="contacts.html">
+								Контакты
+							</a>
+							<ul>
+								<li>
+									<a href="tel:0542104225">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#tel"></use>
+										</svg>
+										054-2104225
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#fax"></use>
+										</svg>
+										03-5410584
+									</a>
+								</li>
+								<li>
+									<a href="mailto:info@kushner-cpa.co.il">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#email"></use>
+										</svg>
+										info@kushner-cpa.co.il
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#map"></use>
+										</svg>
+										Тель-Авив
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="header__language">
+						<ul>
+							<li>
+								<a href="#" class="current">
+									RU
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									HEB
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__social visible-on-mob">
+						<ul>
+							<li>
+								<a href="#" title="YouTube" target="_blank">
+									<svg width="28" height="28" viewBox="0 0 28 28">
+										<use xlink:href="img/sprites.svg#youtube"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="LinkedIn" target="_blank">
+									<svg width="28" height="28" viewBox="0 0 28 28">
+										<use xlink:href="img/sprites.svg#linked-in"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Facebook" target="_blank">
+									<svg width="28" height="28" viewBox="0 0 28 28">
+										<use xlink:href="img/sprites.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="header__tel">
+				<a href="tel:0544679981">
+					<svg width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="img/sprites.svg#tel"></use>
+					</svg>
+					054-4679981
+				</a>
+			</div>
+			<button class="header__burger" type="button" aria-label="Menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+
+		<main class="main">
+			<section class="service-hero container">
+				<div class="service-hero__background" style="background-image: url(img/accounting-services/hero/accounting-services-hero-image.webp);"></div>
+				<div class="service-hero__breadcrumbs breadcrumbs">
+					<a class="breadcrumbs__link" href="index.html">Главная</a>
+					<span class="breadcrumbs__separator">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<use xlink:href="img/sprites.svg#next-arrow"></use>
+						</svg>
+					</span>
+					<a class="breadcrumbs__link" href="accounting-services.html">Бухгалтерские услуги</a>
+					<span class="breadcrumbs__separator">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<use xlink:href="img/sprites.svg#next-arrow"></use>
+						</svg>
+					</span>
+					<span class="breadcrumbs__current">Cоставление отчетов в налоговую</span>
+				</div>
+				<div class="service-hero__content">
+					<h1 class="service-hero__title">
+						СОСТАВЛЕНИЕ ОТЧЕТОВ В НАЛОГОВУЮ
+					</h1>
+				</div>
+			</section>
+			<section class="service container">
+				<div class="service__main">
+					<h2 class="service__title section-title">
+						Cоставление финансовых отчетов в налоговую
+					</h2>
+					<div class="service__content-box">
+						<p>Специалисты фирмы Кushner обладают обширными знаниями в составлении финансовых отчетов в соответствии с израильским стандартом финансовой отчетности (Israeli.GAAP) и международным стандартом (IFRS).</p>
+						<p>Отчеты составляются опытным бухгалтером-экспертом, обладающим обширными знаниями в данной области. Деталям уделяется самое пристальное внимание. Приоритетом в работе является абсолютная достоверность отчета, полнота раскрытия требуемой информации, а также неукоснительное следование нормам соответствующего стандарта финансовой отчетности в его последней версии.</p>
+						<p><b>Компания Кushner обладает обширным опытом и знаниями по практическому применению соответствующего бухгалтерского стандарта при составлении финансовых отчетов в специфических случаях. Речь идет, в том числе, о следующих особых ситуациях:</b></p>
+						<ul class="service__content-box--accent-list">
+							<li>слияние предприятий;</li>
+							<li>объединение финансовых отчетов;</li>
+							<li>финансовая отчетность в соответствии со стандартом в области строительства и строительного подряда (IAS 11, норма 2, норма 4);</li>
+							<li>финансовые инструменты и др.</li>
+						</ul>
+						<p>Практическая работа по составлению отчета производится с применением специального программного обеспечения, предназначенного для оформления финансовой отчетности, либо с применением специфической адаптации электронной таблицы (Excel). При этом мы оставляем так называемый «аудиторский след», обеспечивающий основу для экономичного и эффективного внешнего аудита.</p>
+						<p>После того как процесс составления заканчивается, отчеты передаются партнеру по фирме для просмотра и контроля качества.</p>
+						<p>Наконец, в завершение отчеты проходят полную корректорскую проверку и графическое оформление — лишь после этого они подаются акционерам, банкам и налоговым инстанциям.</p>
+					</div>
+				</div>
+				<div class="service__aside visible-on-desktop">
+					<ul class="service__nav-list">
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Эсек Патур
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#next-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div class="service__share">
+						<h3>Поделиться:</h3>
+						<ul>
+							<li>
+								<a href="#" title="Facebook">
+									<img src="img/social/facebook.svg" width="24" height="24" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" title="linkedIn">
+									<img src="img/social/linkedin.svg" width="24" height="24" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="service__feedback" id="service-feedback">
+						<h3 class="service__feedback--title">
+							ЕСТЬ ВОПРОСЫ? ДАВАЙТЕ ВАМ ПЕРЕЗВОНИМ!
+						</h3>
+						<form action="#service-feedback" method="post" class="service__feedback--form">
+							<label>
+								<input type="text" name="your-name" placeholder="Ваше имя*" required>
+							</label>
+							<label>
+								<input type="tel" name="tel" placeholder="Ваш телефон*" required>
+							</label>
+							<label>
+								<input type="email" name="email" placeholder="Ваш E-mail*" required>
+							</label>
+							<label>
+								<textarea name="message" placeholder="Ваше сообщение"></textarea>
+							</label>
+							<button type="button" class="btn _alt">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="reviews container">
+				<div class="reviews__slider splide">
+					<div class="reviews__header">
+						<h2 class="reviews__title section-title">
+							Отзывы наших клиентов
+						</h2>
+						<div class="reviews__nav"></div>
+					</div>
+					<div class="reviews__slider--track splide__track">
+						<ul class="reviews__list splide__list">
+							<li class="reviews__card splide__slide">
+								<ul class="reviews__rating">
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="reviews__card--text">
+									<h3>
+										Я регулярно работаю с CPA Кушнером и его прекрасным офисным персоналом.
+									</h3>
+									<p>
+										Профессионализм, доступность и доброта Кушнера неординарны! Рекомендую любому работодателю, которому необходимы бухгалтерские услуги, заключение для Минтруда или составление оборонных расчетов, сотрудничать с конторой. Спасибо тебе за все.
+									</p>
+								</div>
+								<div class="reviews__profile">
+									<div class="reviews__avatar">
+										<picture>
+											<source srcset="img/index/reviews/reviews-avatar-1.avif" type="image/avif">
+											<source srcset="img/index/reviews/reviews-avatar-1.webp" type="image/webp">
+											<img src="img/index/reviews/reviews-avatar-1.jpg" alt="" width="48" height="48" loading="lazy">
+										</picture>
+									</div>
+									<div class="reviews__name">
+										ofeklaw.com
+									</div>
+								</div>
+							</li>
+							<li class="reviews__card splide__slide">
+								<ul class="reviews__rating">
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="reviews__card--text">
+									<h3>
+										Я связался с офисом Кушнера со срочной проблемой в Министерстве труда, которое потребовало от меня предоставить сертификаты.
+									</h3>
+									<p>
+										Я получил быстрый, профессиональный и вежливый ответ от сотрудников офиса, и у меня сложилось впечатление, что это действительно группа профессионалов, которые делают все, что в их силах, чтобы избавиться от бюро труда.
+									</p>
+								</div>
+								<div class="reviews__profile">
+									<div class="reviews__avatar">
+										<picture>
+											<source srcset="img/index/reviews/reviews-avatar-2.avif" type="image/avif">
+											<source srcset="img/index/reviews/reviews-avatar-2.webp" type="image/webp">
+											<img src="img/index/reviews/reviews-avatar-2.jpg" alt="" width="48" height="48" loading="lazy">
+										</picture>
+									</div>
+									<div class="reviews__name">
+										Генеральный директор
+									</div>
+								</div>
+							</li>
+							<li class="reviews__card splide__slide">
+								<ul class="reviews__rating">
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="reviews__card--text">
+									<h3>
+
+									</h3>
+									<p>
+										Министерство труда было у меня дома и провело расследование, после которого был выписан крупный штраф. С любезной и быстрой помощью сотрудников офиса я заплатил только небольшой штраф!
+									</p>
+								</div>
+								<div class="reviews__profile">
+									<div class="reviews__avatar">
+										<picture>
+											<source srcset="img/index/reviews/reviews-avatar-3.avif" type="image/avif">
+											<source srcset="img/index/reviews/reviews-avatar-3.webp" type="image/webp">
+											<img src="img/index/reviews/reviews-avatar-3.jpg" alt="" width="48" height="48" loading="lazy">
+										</picture>
+									</div>
+									<div class="reviews__name">
+										Ави, строительный подрядчик
+									</div>
+								</div>
+							</li>
+							<li class="reviews__card splide__slide">
+								<ul class="reviews__rating">
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="reviews__card--text">
+									<h3>
+										Я регулярно работаю с CPA Кушнером и его прекрасным офисным персоналом.
+									</h3>
+									<p>
+										Профессионализм, доступность и доброта Кушнера неординарны! Рекомендую любому работодателю, которому необходимы бухгалтерские услуги, заключение для Минтруда или составление оборонных расчетов, сотрудничать с конторой. Спасибо тебе за все.
+									</p>
+								</div>
+								<div class="reviews__profile">
+									<div class="reviews__avatar">
+										<picture>
+											<source srcset="img/index/reviews/reviews-avatar-1.avif" type="image/avif">
+											<source srcset="img/index/reviews/reviews-avatar-1.webp" type="image/webp">
+											<img src="img/index/reviews/reviews-avatar-1.jpg" alt="" width="48" height="48" loading="lazy">
+										</picture>
+									</div>
+									<div class="reviews__name">
+										ofeklaw.com
+									</div>
+								</div>
+							</li>
+							<li class="reviews__card splide__slide">
+								<ul class="reviews__rating">
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19">
+											<use xlink:href="img/sprites.svg#star"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="reviews__card--text">
+									<h3>
+										Я связался с офисом Кушнера со срочной проблемой в Министерстве труда, которое потребовало от меня предоставить сертификаты.
+									</h3>
+									<p>
+										Я получил быстрый, профессиональный и вежливый ответ от сотрудников офиса, и у меня сложилось впечатление, что это действительно группа профессионалов, которые делают все, что в их силах, чтобы избавиться от бюро труда.
+									</p>
+								</div>
+								<div class="reviews__profile">
+									<div class="reviews__avatar">
+										<picture>
+											<source srcset="img/index/reviews/reviews-avatar-2.avif" type="image/avif">
+											<source srcset="img/index/reviews/reviews-avatar-2.webp" type="image/webp">
+											<img src="img/index/reviews/reviews-avatar-2.jpg" alt="" width="48" height="48" loading="lazy">
+										</picture>
+									</div>
+									<div class="reviews__name">
+										Генеральный директор
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="reviews__slider--footer">
+						<div class="reviews__nav">
+							<div class="splide__arrows">
+								<button class="reviews__arrow splide__arrow splide__arrow--prev" type="button" title="Предыдущий отзыв">
+									<svg width="24" height="24" viewBox="0 0 24 24">
+										<use xlink:href="img/sprites.svg#prev-arrow"></use>
+									</svg>
+								</button>
+								<button class="reviews__arrow splide__arrow splide__arrow--next" type="button" title="Следующий отзыв">
+									<svg width="24" height="24" viewBox="0 0 24 24">
+										<use xlink:href="img/sprites.svg#next-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="service__aside container visible-on-mob">
+				<ul class="service__nav-list">
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Эсек Патур
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<use xlink:href="img/sprites.svg#next-arrow"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="service__share">
+					<h3>Поделиться:</h3>
+					<ul>
+						<li>
+							<a href="#" title="Facebook">
+								<img src="img/social/facebook.svg" width="24" height="24" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="linkedIn">
+								<img src="img/social/linkedin.svg" width="24" height="24" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service__feedback" id="service-feedback">
+					<h3 class="service__feedback--title">
+						ЕСТЬ ВОПРОСЫ? ДАВАЙТЕ ВАМ ПЕРЕЗВОНИМ!
+					</h3>
+					<form action="#service-feedback" method="post" class="service__feedback--form">
+						<label>
+							<input type="text" name="your-name" placeholder="Ваше имя*" required>
+						</label>
+						<label>
+							<input type="tel" name="tel" placeholder="Ваш телефон*" required>
+						</label>
+						<label>
+							<input type="email" name="email" placeholder="Ваш E-mail*" required>
+						</label>
+						<label>
+							<textarea name="message" placeholder="Ваше сообщение"></textarea>
+						</label>
+						<button type="button" class="btn _alt">
+							Отправить
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer container">
+			<div class="footer__col">
+				<a href="index.html" class="footer__logo">
+					<picture>
+						<source srcset="img/logo.avif" type="image/avif">
+						<source srcset="img/logo.webp" type="image/webp">
+						<img src="img/logo.png" width="134" height="56" loading="lazy" alt="Logo" class="footer__logo--img">
+					</picture>
+				</a>
+				<ul class="footer__social">
+					<li>
+						<a href="#" title="YouTube" target="_blank">
+							<svg width="28" height="28" viewBox="0 0 28 28">
+								<use xlink:href="img/sprites.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="LinkedIn" target="_blank">
+							<svg width="28" height="28" viewBox="0 0 28 28">
+								<use xlink:href="img/sprites.svg#linked-in"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Facebook" target="_blank">
+							<svg width="28" height="28" viewBox="0 0 28 28">
+								<use xlink:href="img/sprites.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<nav class="footer__nav">
+					<ul>
+						<li>
+							<a href="#">
+								Бухгалтерские услуги
+							</a>
+							<ul>
+								<li>
+									<a href="#">
+										Услуги аудитора
+										(роэ хешбон)
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Cоставление отчетов
+										в налоговую
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Ведение бухгалтерских книг
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Регистрация в налоговых службах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Отчетность и представительство перед налоговыми инстанциями
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Годовые отчеты
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Декларация об активах и обязательствах
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Дополнительные услуги
+							</a>
+							<ul>
+								<li>
+									<a href="#">
+										Перевод денег в Израиль
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Бизнес-план
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Управление ликвидными стредствами
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Налоговая консультация
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Финансовый отчет
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Возврат подоходного налога
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Трудовое право
+							</a>
+							<ul>
+								<li>
+									<a href="#">
+										Проверка расчетов по зарплате для работодателя
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Права работников по найму
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Отчет о недоплатах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Получение сумм, недоплаченных работодателем
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Расчеты зарплат - услуги для работодателя
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Блог
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контакты
+							</a>
+							<ul>
+								<li>
+									<a href="tel:0544679981">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#tel"></use>
+										</svg>
+										054-4679981
+									</a>
+								</li>
+								<li>
+									<a href="tel:035410584">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#tel"></use>
+										</svg>
+										035410584
+									</a>
+								</li>
+								<li>
+									<a href="mailto:service@kt-cpa.com">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#email"></use>
+										</svg>
+										service@kt-cpa.com
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24">
+											<use xlink:href="img/sprites.svg#map"></use>
+										</svg>
+										HaMasger 20, Tel Aviv
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__row">
+					<div class="footer__copy">
+						Все права защищены © Kushner CPAs
+					</div>
+					<button type="button" class="footer__to-up scroll-to" title="К началу страницы">
+						<svg width="25" height="24" viewBox="0 0 25 24">
+							<use xlink:href="img/sprites.svg#arrow-up"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

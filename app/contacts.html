@@ -1,0 +1,84 @@
+@@include("html/_header.html")
+
+	<main class="main _light-gray">
+		<section class="contacts">
+			<div class="contacts__hero container">
+				<div class="contacts__background" style="background-image: url(img/contacts/contacts-hero-image.webp);"></div>
+				<div class="breadcrumbs">
+					<a class="breadcrumbs__link" href="index.html">Главная</a>
+					<span class="breadcrumbs__separator">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<use xlink:href="img/sprites.svg#next-arrow"></use>
+						</svg>
+					</span>
+					<span class="breadcrumbs__current">Контакты</span>
+				</div>
+				<h1 class="contacts__title">
+					Наши контакты
+				</h1>
+			</div>
+			<div class="contacts__main container">
+				<div class="contacts__support">
+					<h2 class="contacts__support--title">
+						Мы поддерживаем ваш бизнес 24/7
+					</h2>
+					<ul class="contacts__list">
+						<li>
+							<a href="tel:0542104225">
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#tel"></use>
+								</svg>
+								054-2104225
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#fax"></use>
+								</svg>
+								03-5410584
+							</a>
+						</li>
+						<li>
+							<a href="mailto:info@kushner-cpa.co.il">
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#email"></use>
+								</svg>
+								info@kushner-cpa.co.il
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#map"></use>
+								</svg>
+								Тель-Авив
+							</a>
+						</li>
+					</ul>
+					<div class="contacts__text">
+						<p>
+							Оставьте заявки и мы с радостью ответим на все ваши вопросы.
+						</p>
+					</div>
+				</div>
+				<form method="post" action="#contacts-feedback" class="contacts__feedback" id="contacts-feedback">
+					<h2 class="contacts__feedback--title">ОСТАЛИСЬ ВОПРОСЫ? ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ ПЕРЕЗВОНИМ</h2>
+					<label>
+						<input type="text" name="your-name" placeholder="Ваше имя*" required>
+					</label>
+					<label>
+						<input type="email" name="email" placeholder="Ваш E-mail*" required>
+					</label>
+					<label>
+						<textarea name="message" placeholder="Ваше сообщение"></textarea>
+					</label>
+					<button type="button" class="btn _alt">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

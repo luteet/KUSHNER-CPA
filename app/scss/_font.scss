@@ -1,0 +1,87 @@
+
+@font-face {
+	@include font-include('Roboto', 400, swap, normal, 'Roboto-Regular');
+}
+
+@font-face {
+	@include font-include('Roboto', 500, swap, normal, 'Roboto-Medium');
+}
+
+@font-face {
+	@include font-include('Roboto', 700, swap, normal, 'Roboto-Bold');
+}
+
+@font-face {
+	@include font-include('Roboto', 900, swap, normal, 'Roboto-Black');
+}
+
+.main-title {
+	font-weight: 700;
+	line-height: 117.857%;
+	text-transform: uppercase;
+
+	font-size: 2rem;
+
+	@include _550 {
+		font-size: 2.5rem;
+	}
+	
+	@include _768 {
+		font-size: 3rem;
+	}
+	
+	@include _992 {
+		font-size: 3.5rem;
+	}
+}
+
+.section-title {
+	color: var(--dark-blue);
+	
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: 116.667%;
+
+	padding-left: 12px; 
+	border-left: 4px solid var(--accent);
+
+	@include _550 {
+		font-size: 2rem;
+	}
+	
+	@include _768 {
+		font-size: 2.5rem;
+	}
+	
+	@include _992 {
+		font-size: 3rem;
+	}
+}
+
+.title {
+	
+	font-family: var(--title-font);
+	font-weight: 700;
+
+	font-size: 1.125rem;
+
+	@include _768 {
+		font-size: 1.5rem;
+	}
+
+	@include _992 {
+		font-size: 1.875rem;
+	}
+
+}
+
+.section-title {
+
+	font-family: var(--title-font);
+	font-weight: 700;
+
+}
+
+.txt-center {
+	text-align: center;
+}

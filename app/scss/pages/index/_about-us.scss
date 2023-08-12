@@ -1,0 +1,144 @@
+.about-us {
+
+	// .about-us__header
+
+	&__header {
+		display: grid;
+		@include _768 {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	// .about-us__title
+
+	&__title {
+		align-self: self-start;
+	}
+
+	// .about-us__content
+
+	&__content {
+		padding-top: 24px;
+		@include _768 {
+			padding-top: 0;
+		}
+		h3 {
+			font-size: 1.125rem;
+			
+			@include _992 {
+				font-size: 1.25rem;
+				line-height: 140%;
+			}
+			font-weight: 500;
+			line-height: 120%;
+			text-transform: uppercase;
+			color: var(--black);
+		}
+
+		p {
+			padding-top: 16px;
+			line-height: 137%;
+		}
+	}
+
+	&__slider {
+		margin-top: 32px;
+
+		padding-right: 30px;
+
+		@include _768 {
+			padding-right: 50px;
+			margin-top: 64px;
+		}
+
+		@include _container {
+			padding-right: 0;
+		}
+
+		overflow: visible;
+		
+		&--track {
+			&.splide__track {
+				overflow: visible;
+			}
+		}
+	}
+
+	// .about-us__list
+
+	&__list {
+		
+
+		/* display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: 20px; */
+
+		counter-reset: about_us_card_number;
+	}
+
+	// .about-us__card
+
+	&__card {
+
+		background: var(--primary);
+		padding: 16px;
+		@include _768 {
+			padding: 24px;
+		}
+
+		&:nth-child(-n + 9) &--number::before {
+			content: "0"counter(about_us_card_number);
+		}
+
+		border-radius: 16px;
+
+		h3 {
+			font-size: 1.125rem;
+
+			padding-top: 16px;
+
+			@include _768 {
+				padding-top: 24px;
+			}
+			
+			@include _992 {
+				font-size: 1.25rem;
+			}
+
+			font-weight: 600;
+			line-height: 130%;
+			text-transform: uppercase;
+			color: var(--white);
+		}
+
+		p {
+			padding-top: 16px;
+			color: var(--white);
+			line-height: 137%;
+		}
+
+		// .about-us__card--number
+
+		&--number {
+			
+			&::before {
+				counter-increment: about_us_card_number;
+				content: counter(about_us_card_number);
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				border-radius: 50%;
+				width: 38px; height: 38px;
+				background: var(--accent);
+				color: var(--white);
+
+				font-weight: 500;
+				line-height: 100%;
+			
+			}
+			
+		}
+	}
+}

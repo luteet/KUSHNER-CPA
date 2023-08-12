@@ -1,0 +1,255 @@
+.footer {
+
+	flex: 0 0 auto;
+	background: var(--black);
+	color: var(--white);
+
+	padding-top: 64px; padding-bottom: 64px;
+
+	display: grid;
+	@include _768 {
+		grid-template-columns: 200px auto;
+	}
+	@include _container {
+		grid-template-columns: 250px auto;
+	}
+
+	// .footer__col
+
+	&__col {
+		&:first-child {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include _768 {
+				display: block;
+			}
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+
+		// .footer__logo--img
+
+		&--img {
+			width: 76px; height: 32px;
+			object-fit: contain;
+			@include _768 {
+				width: 134px; height: 56px;
+			}
+		}
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: -8px; 
+		@include _768 {
+			padding-top: 32px;
+		}
+
+		a {
+			display: block;
+			padding: 8px;
+
+			fill: var(--white);
+			@media (any-hover: hover) {
+				&:hover {
+					fill: var(--accent);
+				}
+				
+				&:active {
+					fill: var(--accent-active);
+				}
+			}
+
+			svg {
+				transition: fill .2s ease;
+			}
+		}
+	}
+
+	// .footer__nav
+
+	&__nav {
+		margin-top: 32px;
+		@include _768 {
+			margin-top: 0;
+		}
+		> ul {
+			@include _768 {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+
+			margin-top: -15px;
+
+			> li {
+				display: flex;
+				flex-direction: column;
+
+				padding-top: 15px;
+
+				@include _768 {
+					&:not(:last-child) {
+						padding-right: 10px;
+					}
+				}
+
+				> a {
+					color: var(--accent);
+					font-size: 1.125rem;
+					font-weight: 500;
+					line-height: normal;
+					display: block;
+					position: relative;
+
+					padding: 5px 0;
+					&::after {
+						content: '';
+						position: absolute;
+						right: 0; top: 50%;
+						transform: translate(0,-50%);
+						width: 24px; height: 24px;
+						background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 9L12 15L6 9' stroke='%23EC564E'/%3E%3C/svg%3E%0A")
+						center / contain no-repeat;
+					}
+
+					@include _768 {
+						padding: 0;
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+
+			> li > ul {
+				width: 100%;
+				padding-top: 0;
+				height: 0; overflow: hidden;
+				@include _768 {
+					padding-top: 8px;
+					height: auto; overflow: visible;
+					max-width: 205px;
+				}
+
+				a {
+					font-size: 1rem;
+					color: var(--white);
+
+					display: flex;
+					align-items: center;
+
+					padding: 8px 0;
+
+					svg {
+						background: var(--white);
+						fill: var(--black);
+						border-radius: 50%;
+
+						margin-right: 10px;
+
+						transition: fill .1s ease, background .1s ease;
+					}
+
+					@media (any-hover: hover) {
+						transition: color .1s ease;
+						&:hover {
+							color: var(--accent);
+							svg {
+								fill: var(--white);
+								background: var(--accent);
+							}
+						}
+						
+						&:active {
+							color: var(--accent-active);
+							svg {
+								fill: var(--white);
+								background: var(--accent-active);
+							}
+						}
+					}
+				}
+			}
+
+			> li.has-sub._active > ul {
+				padding-top: 8px;
+			}
+
+		}
+	}
+
+	// .footer__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		padding-top: 42px;
+
+		@include _768 {
+			justify-content: space-between;
+			flex-direction: row;
+		}
+	}
+
+	// .footer__copy
+
+	&__copy {
+		width: 100%;
+		@include _768 {
+			width: auto;
+		}
+	}
+
+	// .footer__to-up
+
+	&__to-up {
+		margin-top: 20px;
+		@include _768 {
+			margin-top: 0px;
+		}
+
+		background: var(--white);
+		border-radius: 50%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px; height: 32px;
+
+		fill: var(--black);
+		svg {
+			margin-left: -1px;
+		}
+
+		@media (any-hover: hover) {
+			transition: background .2s ease;
+			svg {
+				transition: fill .2s ease;
+			}
+
+			&:hover {
+				background: var(--accent);
+				fill: var(--white);
+			}
+			
+			&:active {
+				background: var(--accent-active);
+				fill: var(--white);
+			}
+		
+		}
+	}
+}
+

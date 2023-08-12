@@ -1,0 +1,31 @@
+input, textarea {
+	&::placeholder {
+		transition: opacity .2s ease;
+		opacity: 1;
+	}
+	
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+input, textarea {
+	padding: 16px;
+	background: var(--white);
+	border-radius: 8px;
+
+	color: var(--black);
+	line-height: 118.75%;
+
+	width: 100%;
+
+	&::placeholder {
+		color: var(--black);
+	}
+}
+
+textarea {
+	resize: none;
+	min-height: 140px;
+}
+
